@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import RenderText from "./RenderText";
 import Button from "react-bootstrap/Button";
 import { Col, Row } from "react-bootstrap";
 import NewCard from "../../components/reactjs-the-complete-course-for-beginners/NewCard";
