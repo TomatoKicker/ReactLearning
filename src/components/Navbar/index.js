@@ -13,6 +13,9 @@ const Navbar = () => {
                     <NavLink to="/tic-tac-toe" activeStyle>
                         Tic Tac Toe
                     </NavLink>
+                    <NavLink to="/project1" activeStyle>
+                        Project 1
+                    </NavLink>
                 </NavMenu>
             </Nav>
         </>
