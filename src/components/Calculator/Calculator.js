@@ -27,15 +27,15 @@ function Calculator() {
             <input type={'button'} value={'2'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'1'} className='button' onClick={clickHandle}  />
 
-            <input type={'button'} value={'0'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'+'} className='button' onClick={clickHandle}  />
+            <input type={'button'} value={'0'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'-'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'/'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'*'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'%'} className='button' onClick={clickHandle}  />
-            <input type={'button'} value={'.'} className='button' onClick={clickHandle}  />
 
             <input type={'button'} value={'CE'} className='button' onClick={clearResult} />
+            <input type={'button'} value={'.'} className='button' onClick={clickHandle}  />
             <input type={'button'} value={'='} className='button' onClick={calculate} />
         </div>
     )
