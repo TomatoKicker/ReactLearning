@@ -1,3 +1,4 @@
+/* eslint no-eval: 0 */
 import React from "react";
 import '../../css/Calculator/Calculator.css'
 import { useState } from 'react';
