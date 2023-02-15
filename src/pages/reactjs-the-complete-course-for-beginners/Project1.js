@@ -6,9 +6,9 @@ import ConditionalRendering from "../../components/reactjs-the-complete-course-f
 function Project1() {
     return (
         <div className="project1">
-        <Header></Header>
-        <Counter></Counter>
-        <ConditionalRendering></ConditionalRendering>
+            <Header></Header>
+            <Counter></Counter>
+            <ConditionalRendering></ConditionalRendering>
         </div>
     )
 }
