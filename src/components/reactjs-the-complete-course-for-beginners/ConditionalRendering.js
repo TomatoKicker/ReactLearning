@@ -15,16 +15,16 @@ function ConditionalRendering() {
 
     return (
         <div className="toggleBootstrapCard">
-            <Row>
-                <Col xs={12} md={6}>
+            <Row className="py-5">
+                <Col xs={12} className={'text-center'}>
                     <Button
                         onClick={() => { updateToggle(!toggle) }}
                     >
-                        Toggle
+                        {toggle ? 'hide' : 'show'}
                     </Button>
                 </Col>
             </Row>
-            <Row>
+            <Row className="py-5">
                 {toggle && cards}
             </Row>
         </div>
