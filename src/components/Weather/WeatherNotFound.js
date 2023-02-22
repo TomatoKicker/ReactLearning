@@ -1,11 +1,12 @@
 import React from "react";
 
 const WeatherNotFound = () => {
-    return(
+    return (
         <div className="weather-notfound">
-            <h1>
-                Not Found
-            </h1>
+            <img src={require("../../assets/weather/404.png")} alt='weather not found'></img>
+            <p>
+                Location not found :(
+            </p>
         </div>
     )
 };

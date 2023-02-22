@@ -18,3 +18,7 @@
 .weather-searchbox > * {
     padding: auto;
 }
+.weather-notfound p{
+    padding-top: 10px;
+    text-align: center;
+}
