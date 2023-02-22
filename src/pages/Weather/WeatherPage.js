@@ -1,14 +1,11 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import WeatherContainer from "../../components/Weather/WeatherContainer";
 
 function WeatherPage() {
-    return(
-            <Row>
-                <Col>
-                    <WeatherContainer/>
-                </Col>
-            </Row>
+    return (
+        <div className="weather-page">
+            <WeatherContainer />
+        </div>
     )
 }
 
