@@ -20,7 +20,7 @@ const Navbar = () => {
                         Calculator
                     </NavLink>
                     <NavLink to="/weather" activeStyle>
-                        Weather
+                        Wea&shy;ther
                     </NavLink>
                 </NavMenu>
             </Nav>
