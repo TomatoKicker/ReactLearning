@@ -6,7 +6,7 @@ import { faLocationDot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-ic
 function test(){
     const inputField = document.querySelector('input')
     const weatherContainer = document.querySelector('.weather-container')
-    if(inputField.value == ''){
+    if(inputField.value === ''){
         alert('test');
         return;
     }
