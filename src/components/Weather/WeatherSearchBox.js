@@ -5,6 +5,7 @@ import { faLocationDot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-ic
 
 function test(){
     const inputField = document.querySelector('input')
+    const weatherContainer = document.querySelector('.weather-container')
     if(inputField.value == ''){
         alert('test');
         return;
@@ -19,9 +20,13 @@ function test(){
             json =>{
                 if (json.cod === '404'){
                     alert('404') 
-                }else{
-                alert('nice')
+                    weatherContainer.style.height = '500px';
+                    return;
                 }
+                    const windSpeed = json.wind.speed;
+                    const humidityLevel = json.main.humidity;
+                alert(windSpeed);
+                alert(humidityLevel);
             } 
         );
 }
