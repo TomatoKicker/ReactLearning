@@ -1,0 +1,24 @@
+.weather-page{
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.weather-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 30vw;
+    padding: 40px 30px;
+}
+.weather-searchbox{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.weather-searchbox > * {
+    padding: auto;
+}
+.weather-notfound p{
+    padding-top: 10px;
+    text-align: center;
+}

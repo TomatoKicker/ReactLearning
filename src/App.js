@@ -13,18 +13,16 @@ import WeatherPage from './pages/Weather/WeatherPage';
 
 function App() {
     return (
-        <div className='container'>
-            <Router>
-                <Navbar />
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/tic-tac-toe' element={<Game />} />
-                    <Route path='/project1' element={<Project1 />} />
-                    <Route path='/calculator' element={<CalculatorPage />} />
-                    <Route path='/weather' element={<WeatherPage />} />
-                </Routes>
-            </Router>
-        </div>
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/tic-tac-toe' element={<Game />} />
+                <Route path='/project1' element={<Project1 />} />
+                <Route path='/calculator' element={<CalculatorPage />} />
+                <Route path='/weather' element={<WeatherPage />} />
+            </Routes>
+        </Router>
     );
 }
 

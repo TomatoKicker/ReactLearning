@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCocktail } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
+<<<<<<< HEAD
 function WeatherSearchBox(){
     return(
       <div>
@@ -10,6 +11,16 @@ function WeatherSearchBox(){
         <button>
 <FontAwesomeIcon icon={faCocktail}/>
         </button>
+=======
+function WeatherSearchBox() {
+    return (
+        <div className="weather-searchbox">
+            <FontAwesomeIcon icon={faLocationDot} />
+            <input type="text" placeholder="Enter your country"></input>
+            <button>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+>>>>>>> refs/remotes/origin/main
         </div>
     )
 }
