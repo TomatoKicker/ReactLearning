@@ -2,7 +2,7 @@ import React from "react";
 
 const WeatherNotFound = () => {
     return (
-        <div className="weather-notfound">
+        <div className="weather-notFound">
             <img src={require("../../assets/weather/404.png")} alt='weather not found'></img>
             <p>
                 Location not found :(

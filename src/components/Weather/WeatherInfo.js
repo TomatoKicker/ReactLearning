@@ -4,7 +4,7 @@ import { faWind, faWater } from "@fortawesome/free-solid-svg-icons";
 
 function WeatherInfo() {
     return(
-        <div className="wearher-info">
+        <div className="weather-info">
             <img src={require('../../assets/weather/clear.png')} alt='Westher Info'/>
             <div className="weather-info-box">
                 <div className="weather-info-wind">

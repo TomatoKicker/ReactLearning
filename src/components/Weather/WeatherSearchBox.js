@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 
-function test(){
+function test() {
     const inputField = document.querySelector('input')
     const weatherContainer = document.querySelector('.weather-container')
-    if(inputField.value === ''){
+    if (inputField.value === '') {
         alert('test');
         return;
     }
@@ -17,24 +17,30 @@ function test(){
     fetch(URL)
         .then(response => response.json())
         .then(
-            json =>{
-                if (json.cod === '404'){
-                    alert('404') 
+            json => {
+                if (json.cod === '404') {
+                    const weatherNotFound = document.querySelector('.weather-notFound')
+                    weatherNotFound.style.display = 'block';
+                    console.log(weatherNotFound);
                     weatherContainer.style.height = '500px';
+
                     return;
                 }
-                    const windSpeed = json.wind.speed;
-                    const humidityLevel = json.main.humidity;
-                alert(windSpeed);
-                alert(humidityLevel);
-            } 
+                const weatherInfo = document.querySelector('.weather-info')
+                weatherInfo.style.display = 'block';
+                const windSpeed = json.wind.speed;
+                const humidityLevel = json.main.humidity;
+
+                console.log(windSpeed);
+                console.log(humidityLevel);
+            }
         );
 }
 
 function WeatherSearchBox() {
     return (
         <div className="weather-searchbox">
-           <FontAwesomeIcon icon={faLocationDot} size="2x" />
+            <FontAwesomeIcon icon={faLocationDot} id='weather-searchbox-svg' size="2x" />
             <input type="text" placeholder="Enter your country"></input>
             <button onClick={test}>
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
